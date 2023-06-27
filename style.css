@@ -1,0 +1,104 @@
+body{
+    overflow-x:hidden;
+}
+.microphone{
+    display: inline-block;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    margin-left: 500px;
+    width: 40%;
+    left: 0px;
+}
+
+@keyframes example {
+    from   {top:0px; left: 0px;}
+    to     {top:200px; left: 480px;}
+    
+    
+}
+
+.intro{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 70px;
+    border: solid 3px;
+    margin-left: 300px;
+    color: cyan;
+    animation : disappear 2s forwards;
+}
+
+@keyframes disappear{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+button{
+    padding : 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid;
+    border-radius: 20px;
+    background-color: aqua;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    
+}
+button:hover{
+    opacity: 0.65;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.s2t{
+    position: absolute;
+    top: 20%;
+    right: 70;
+    display: block;
+    margin-bottom : 0px;
+    transform: translateY(50%);
+    transform: translateX(260%);
+   
+}
+.t2s{
+    position: absolute;
+    top: 30%;
+    right: 100;
+    display: inline-block;
+    margin-bottom : 0px;
+    transform: translateY(50%);
+    transform: translateX(260%);
+}
+.other{
+    position: absolute;
+    top: 40%;
+    right: 70;
+    display: inline-block;
+    transform: translateY(50%);
+    transform: translateX(300%);
+}
+.otherBtn{
+    padding-right: 100px;
+}
+.s2t, .t2s ,.other{
+    animation: appear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

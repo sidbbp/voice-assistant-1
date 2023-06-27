@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech2Text</title>
+    <link rel ="stylesheet" href="style1.css">
+    <script src = "script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="speechInput">
+        <h1 style="color: aquamarine;">Click on the Microphone to record</h1>
+        <h1 style="color: darkslateblue;" id="results"></h1>
+    </div>
+
+    <div class="microphone1">
+        <a id="speechtoText" class="speechtoText" onclick="record()">
+            <img src="rawMicrophone.png" style="width: 400px; height: 400px;">
+        </a>
+    </div>
+
+</body>
+</html>
